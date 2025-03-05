@@ -8,15 +8,6 @@ main{
     display: flex;
 }
 
-footer{
-    display: flex;
-    height: 10vh;
-    width: 100%;
-    background-color: grey;
-    position: fixed;
-    bottom: 0;
-}
-
 /* sidebar */
 .col-left{
     background-color: black;
@@ -182,12 +173,12 @@ div.playlists > div{
 }
 
 div.playlists h4 {
-    margin-top: 10px;
+    margin-top: 15px;
     text-align: center;
     width: 150px;
 }
 
-div.container p{
+div.container p, footer p{
     color: grey;
     font-weight: 600;
     font-size: 14px;
@@ -204,6 +195,48 @@ div.playlists img{
     margin-top: 30px;
 }
 
+/* popular artists */
 div.artists img{
     border-radius: 100px;
+}
+
+/* footer */
+footer{
+    display: flex;
+    height: 10vh;
+    width: 100%;
+    background-color: rgb(46, 46, 46);
+    position: fixed;
+    bottom: 0;
+}
+
+.current-song{
+    width: 250px;
+    display: flex;
+    color: white;
+    align-items: center;
+}
+
+div.current-song :nth-child(2){
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+div.current-song p{
+    margin-top: 0px;
+    font-size: 5px;
+}
+
+div.current-song img{
+    width: 50px;
+    margin: 0 15px;
+}
+
+div.current-song i{
+    display: block;
+    color: grey;
+    margin-left: 50px;
+    margin-bottom: 5px;
 }
