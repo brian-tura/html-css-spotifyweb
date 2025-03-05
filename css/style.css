@@ -204,3 +204,6 @@ div.playlists img{
     margin-top: 30px;
 }
 
+div.artists img{
+    border-radius: 100px;
+}
