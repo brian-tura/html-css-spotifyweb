@@ -124,10 +124,11 @@ div.install img{
 
 /* main content */
 .bg-prp{
-    background-color: purple;
+    background-color: rgb(33, 33, 54);
     width: 100%;
     margin-left: 250px;
     overflow-y: auto;
+    color: white;
 }
 
 .btn-upgrade{
@@ -147,6 +148,36 @@ div.btn-upgrade button{
     text-transform: uppercase;
 }
 
-.titles{
+/* navigation menu */
+.nav-menu{
     display: flex;
+    justify-content: space-between;
+    margin: 20px 300px;
+    font-size: 15px;
+    color: rgb(124, 124, 124);
+    text-transform: uppercase;
+}
+
+.container{
+    margin: 30px 20px;
+}
+
+div.playlists > div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+div.playlists h4 {
+    
+}
+
+.playlists{
+    display: flex;
+}
+
+div.playlists img{
+    width: 200px;
+    margin-right: 15px;
+    margin-top: 30px;
 }
