@@ -9,8 +9,9 @@ main{
 }
 
 .bg-red{
-    background-color: red;
-    height: 100%;
+    background-color: black;
+    color: rgb(104, 104, 104);
+    height: 90%;
     width: 250px;
     position: fixed;
     top: 0;
@@ -19,7 +20,6 @@ main{
 
 .bg-prp{
     background-color: purple;
-    height: 1000px;
     width: 100%;
     margin-left: 250px;
     overflow-y: auto;
@@ -27,22 +27,31 @@ main{
 
 footer{
     display: flex;
-    height: 200px;
+    height: 10%;
     width: 100%;
     background-color: grey;
-    position: sticky;
+    position: fixed;
     bottom: 0;
 }
 
 .left-col{
-    margin: 10px;
+    margin: 0 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
 }
 
 /* logo */
 
 .logo{
     position: relative;
-    padding-right: 30px;
+    padding-right: 40px;
+    margin: 20px 0;
+}
+
+.big{
+    width: 150px;
 }
 
 .small {
@@ -50,5 +59,70 @@ footer{
     position: absolute;
     left: 0;
     display: none;
+}
 
+ul{
+    list-style-type: none;
+    margin: 20px 0;
+}
+
+ul li{
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+}
+
+ul li img{
+    margin-right: 5px;
+}
+
+ul.sidebar-nav img{
+    width: 20px;
+}
+
+.sidebar-footer{
+    margin-bottom: 10px;
+}
+
+.prof{
+    margin-top: 10px;
+    display: flex;
+    color: white;
+    font-weight: 600;
+    align-items: center;
+}
+
+div.prof img{
+    width: 25px;
+    background-color: grey;
+    border-radius: 100px;
+    margin-right: 10px;
+}
+
+.install{
+    padding-bottom: 10px;
+    border-bottom: 1px grey solid;
+    display: flex;
+    align-items: center;
+}
+
+div.install img{
+    width: 20px;
+    margin-right: 5px;
+}
+
+.new-playlist-icon{
+    font-size: 30px;
+    background-color: rgb(141, 141, 141);
+    margin-right: 10px;
+    padding: 0px 10px;
+    font-weight: 900;
+    color: black;
+}
+
+.playlist-title{
+    font-size: 14px;
+    font-weight: 800;
+    color: white;
+    text-transform: uppercase;
 }
