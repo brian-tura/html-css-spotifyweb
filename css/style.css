@@ -156,12 +156,14 @@ div.btn-upgrade button{
     font-size: 15px;
     color: rgb(124, 124, 124);
     text-transform: uppercase;
+    font-weight: 600;
 }
 
 .container{
     margin: 30px 20px;
 }
 
+/* recently played */
 div.playlists > div{
     display: flex;
     flex-direction: column;
@@ -169,7 +171,14 @@ div.playlists > div{
 }
 
 div.playlists h4 {
-    
+    margin: 13px 0;
+    text-align: center;
+}
+
+div.playlists p{
+    color: grey;
+    font-weight: 600;
+    font-size: 15px;
 }
 
 .playlists{
