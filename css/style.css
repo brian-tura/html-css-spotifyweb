@@ -7,13 +7,14 @@
 
 main{
     display: flex;
+    height: calc(100vh - 80px);
 }
 
 /* sidebar */
 .col-left{
     background-color: black;
     color: rgb(104, 104, 104);
-    height: 90vh;
+    height: calc(100% - 80px);
     width: 250px;
     position: fixed;
     top: 0;
@@ -115,10 +116,10 @@ div.install img{
 }
 
 /* main content */
-.bg-prp{
+.right-col{
     background-color: rgb(33, 33, 54);
-    width: 100%;
-    height: 90vh;
+    width: calc(100vw - 250px);
+    height: 100%;
     padding-bottom: 20px;
     margin-left: 250px;
     overflow-y: scroll;
@@ -151,7 +152,7 @@ h2{
     display: flex;
     justify-content: center;
     margin: 20px 0;
-    font-size: 15px;
+    font-size: 12px;
     color: rgb(124, 124, 124);
     text-transform: uppercase;
     font-weight: 600;
@@ -163,7 +164,7 @@ div.nav-menu > div{
 
 .container{
     margin: 0 20px;
-    overflow-y: auto;
+    width: 100%;
 }
 
 /* recently played */
@@ -171,12 +172,14 @@ div.playlists > div{
     display: flex;
     flex-direction: column;
     align-items: center;
+    flex-wrap: wrap;
+    max-width: 10vw;
+    margin-right: 10px;
 }
 
 div.playlists h4 {
     margin-top: 15px;
     text-align: center;
-    width: 150px;
 }
 
 div.container p, footer p{
@@ -191,9 +194,8 @@ div.container p, footer p{
 }
 
 div.playlists img{
-    width: 200px;
-    margin-right: 10px;
     margin-top: 30px;
+    max-width: 100px;
 }
 
 /* popular artists */
@@ -204,7 +206,7 @@ div.artists img{
 /* footer */
 footer{
     display: flex;
-    height: 10vh;
+    height: 80px;
     width: 100%;
     background-color: rgb(46, 46, 46);
     position: fixed;
