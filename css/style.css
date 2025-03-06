@@ -15,7 +15,7 @@ main{
     background-color: black;
     color: rgb(104, 104, 104);
     height: calc(100% - 80px);
-    width: 250px;
+    width: 200px;
     position: fixed;
     top: 0;
     left: 0;
@@ -41,9 +41,7 @@ main{
 }
 
 .small {
-    height: 60px;
-    position: absolute;
-    left: 0;
+    height: 25px;
     display: none;
 }
 
@@ -118,10 +116,10 @@ div.install img{
 /* main content */
 .right-col{
     background-color: rgb(33, 33, 54);
-    width: calc(100vw - 250px);
+    width: calc(100vw - 200px);
     height: 100%;
     padding-bottom: 20px;
-    margin-left: 250px;
+    margin-left: 200px;
     overflow-y: scroll;
     color: white;
 }
@@ -156,16 +154,13 @@ h2{
     color: rgb(124, 124, 124);
     text-transform: uppercase;
     font-weight: 600;
+    width: 100%;
 }
 
 div.nav-menu > div{
     margin: 0 15px;
 }
 
-.container{
-    margin: 0 20px;
-    width: 100%;
-}
 
 /* recently played */
 div.playlists > div{
@@ -173,13 +168,18 @@ div.playlists > div{
     flex-direction: column;
     align-items: center;
     flex-wrap: wrap;
-    max-width: 10vw;
     margin-right: 10px;
+    width: calc(100% / 7);
 }
 
 div.playlists h4 {
     margin-top: 15px;
     text-align: center;
+    width: 100%;
+}
+
+.container{
+    margin-left: 20px;
 }
 
 div.container p, footer p{
@@ -191,11 +191,14 @@ div.container p, footer p{
 
 .playlists{
     display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    width: 80%;
 }
 
 div.playlists img{
     margin-top: 30px;
-    max-width: 100px;
+    max-width: 100%;
 }
 
 /* popular artists */
@@ -306,4 +309,75 @@ div.bar :nth-child(2){
 
 div.options i{
     margin: 0 7px;
+}
+
+
+/* Media query tablet */
+@media screen and (max-width: 991px){
+    div.nav-menu{
+        flex-wrap: wrap;
+    }
+    
+
+    .playlists{
+        width: 100%;
+
+    }
+
+    div.playlists > div{
+        width: calc(100% /4.5);
+    }
+
+}
+
+/* Media query small */
+@media screen and (max-width: 767px){
+    div.playlists > div{
+        width: calc(100%/2.5);
+    }
+
+    div.current-song > :nth-child(2) {
+        display: none;
+    }
+    
+}
+
+@media screen and (max-width: 575px){
+    .new-playlist{
+        display: none;
+    }
+
+    div.sidebar p{
+        display: none;
+    }
+
+    .big{
+        display: none;
+    }
+
+    .small{
+        display: block;
+        width: ;
+    }
+
+    .col-left{
+        width: 50px;
+    }
+
+    .right-col{
+        width: calc(100vw - 50px);
+        margin-left: 50px;
+    }
+
+    ul li img {
+        margin: 0;
+    }
+
+    ul li{
+        width: 50px;
+    }
+
+    .sidebar-footer{
+        width: 30px;
+    }
 }
